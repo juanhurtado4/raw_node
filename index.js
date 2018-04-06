@@ -1,4 +1,7 @@
-// Primary file for the api
+/*
+ * Primary file for the api
+ * Author: Juan Hurtado
+ */
 
 // Dependencies
 const http = require('http');
