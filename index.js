@@ -14,11 +14,14 @@ const server = http.createServer((req, res) => {
   let path = parsedUrl.pathname;
   let trimmedPath = path.replace(/^\/+|\/+$/g,"");
 
+  // Get the path
+  const method = req.method.toLowerCase();
+
   // Send the response
     res.end('hello world\n');
 
   // Log the request path
-  console.log('Request is received on path: ' + trimmedPath);
+  console.log('Request is received on path: ' + trimmedPath + "with method " + method);
 
 })
 
