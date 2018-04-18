@@ -4,7 +4,7 @@
  */
 
 // Dependencies
-const http = require('http');
+const http = require("http");
 const url = require('url');
 
 // The server should respond to all request with a string
@@ -26,9 +26,9 @@ const server = http.createServer((req, res) => {
   // Log the request path
   console.log('Request is received on path: ' + trimmedPath + "with method " + method);
 
-})
+});
 
 // Start the server, and have it listen on port 3000
 server.listen(3000, () => {
-  console.log("The server is listening on port 3000 now")
-})
+  console.log("The server is listening on port 3000 now");
+});
