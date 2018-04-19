@@ -5,7 +5,7 @@
 
 // Dependencies
 const http = require("http");
-const url = require('url');
+const url = require("url");
 
 // The server should respond to all request with a string
 const server = http.createServer((req, res) => {
@@ -21,10 +21,10 @@ const server = http.createServer((req, res) => {
   const method = req.method.toLowerCase();
 
   // Send the response
-    res.end('hello world\n');
+    res.end("hello world\n");
 
   // Log the request path
-  console.log('Request is received on path: ' + trimmedPath + "with method " + method);
+  console.log("Request is received on path: " + trimmedPath + "with method " + method);
 
 });
 
